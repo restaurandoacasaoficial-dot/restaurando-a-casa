@@ -82,6 +82,54 @@ const books = [
     amazon: "https://www.amazon.com.br/s?k=DESTRONANDO+MEDO+pavor+confian%C3%A7a+gra%C3%A7a%2C+_B0FNZWZ3M1&i=digital-text&tag=kbl-20&ref=nb_sb_noss",
     printed: "https://loja.uiclap.com/titulo/ua132845"
   }
+
+  ,
+  {
+    title: "KARNAK-12",
+    subtitle: "A cidade sob o silêncio",
+    ebookPrice: "Disponível",
+    printedPrice: "Disponível",
+    image: "/capas/karnak-12.png",
+    amazon: "#",
+    printed: "#"
+  },
+  {
+    title: "O Guardião das Estrelas I",
+    subtitle: "Uma jornada de fé e mistério",
+    ebookPrice: "Disponível",
+    printedPrice: "Disponível",
+    image: "/capas/guardiao-1.png",
+    amazon: "#",
+    printed: "#"
+  },
+  {
+    title: "O Guardião das Estrelas II",
+    subtitle: "Continuação da saga",
+    ebookPrice: "Disponível",
+    printedPrice: "Disponível",
+    image: "/capas/guardiao-2.png",
+    amazon: "#",
+    printed: "#"
+  },
+  {
+    title: "O Guardião das Estrelas III",
+    subtitle: "A batalha continua",
+    ebookPrice: "Disponível",
+    printedPrice: "Disponível",
+    image: "/capas/guardiao-3.png",
+    amazon: "#",
+    printed: "#"
+  },
+  {
+    title: "O Guardião das Estrelas IV",
+    subtitle: "O desfecho da coleção",
+    ebookPrice: "Disponível",
+    printedPrice: "Disponível",
+    image: "/capas/guardiao-4.png",
+    amazon: "#",
+    printed: "#"
+  }
+
 ];
 
 // =====================================================
@@ -424,6 +472,104 @@ export default function RestaurandoCasaPremium() {
           </div>
         </div>
       </section>
+
+
+      {/* FICÇÃO */}
+      <section className="py-28 bg-[#0f172a] text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto mb-20">
+            <span className="uppercase tracking-[0.2em] text-amber-300 font-bold text-sm">
+              Ficção & Jornada
+            </span>
+
+            <h2 className="text-5xl font-black mt-5 mb-8">
+              Universos, mistérios e jornadas épicas
+            </h2>
+
+            <p className="text-xl text-slate-300 leading-relaxed">
+              Conheça coleções inspiradoras que unem imaginação, propósito e reflexão.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-6">
+            {books.slice(6).map((book) => (
+              <div
+                key={book.title}
+                className="bg-white/10 backdrop-blur-xl rounded-[28px] overflow-hidden border border-white/10 hover:-translate-y-3 transition-all duration-500"
+              >
+                <img
+                  src={book.image}
+                  alt={book.title}
+                  className="w-full h-[320px] object-contain bg-gradient-to-b from-slate-100 to-slate-300 p-4"
+                />
+
+                <div className="p-5">
+                  <h3 className="font-black text-lg mb-2">
+                    {book.title}
+                  </h3>
+
+                  <p className="text-slate-300 text-sm">
+                    {book.subtitle}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* TESTEMUNHOS */}
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="uppercase tracking-[0.2em] text-amber-700 font-bold text-sm">
+              Testemunhos
+            </span>
+
+            <h2 className="text-5xl font-black mt-5 mb-8">
+              Histórias de restauração
+            </h2>
+
+            <p className="text-xl text-slate-600 leading-relaxed">
+              Pessoas impactadas através da Palavra, da fé e da esperança.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+              <p className="text-slate-700 leading-relaxed mb-6">
+                “Esses livros me ajudaram a vencer a ansiedade e voltar a confiar em Deus.”
+              </p>
+              <div className="font-black text-slate-900">— Leitora Amazon</div>
+            </div>
+
+            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+              <p className="text-slate-700 leading-relaxed mb-6">
+                “Uma leitura acolhedora, profunda e extremamente necessária.”
+              </p>
+              <div className="font-black text-slate-900">— Comunidade Restaurando a Casa</div>
+            </div>
+
+            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+              <p className="text-slate-700 leading-relaxed mb-6">
+                “Encontrei esperança novamente através dessas mensagens.”
+              </p>
+              <div className="font-black text-slate-900">— Leitor Kindle</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a
+        href="https://wa.me/"
+        target="_blank"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-3xl transition-all hover:scale-110"
+      >
+        💬
+      </a>
+
 
       {/* CTA */}
       <section className="py-32 bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#1e293b] text-white text-center relative overflow-hidden">
