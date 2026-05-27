@@ -85,50 +85,63 @@ const books = [
 
   ,
   {
-    title: "KARNAK-12",
-    subtitle: "A cidade sob o silêncio",
-    ebookPrice: "Disponível",
-    printedPrice: "Disponível",
-    image: "/capas/karnak-12.png",
-    amazon: "#",
-    printed: "#"
-  },
-  {
-    title: "O Guardião das Estrelas I",
-    subtitle: "Uma jornada de fé e mistério",
-    ebookPrice: "Disponível",
-    printedPrice: "Disponível",
-    image: "/capas/guardiao-1.png",
-    amazon: "#",
-    printed: "#"
-  },
-  {
-    title: "O Guardião das Estrelas II",
-    subtitle: "Continuação da saga",
-    ebookPrice: "Disponível",
-    printedPrice: "Disponível",
-    image: "/capas/guardiao-2.png",
-    amazon: "#",
-    printed: "#"
-  },
-  {
-    title: "O Guardião das Estrelas III",
-    subtitle: "A batalha continua",
-    ebookPrice: "Disponível",
-    printedPrice: "Disponível",
-    image: "/capas/guardiao-3.png",
-    amazon: "#",
-    printed: "#"
-  },
-  {
-    title: "O Guardião das Estrelas IV",
-    subtitle: "O desfecho da coleção",
-    ebookPrice: "Disponível",
-    printedPrice: "Disponível",
-    image: "/capas/guardiao-4.png",
-    amazon: "#",
-    printed: "#"
-  }
+  title: "KARNAK-12",
+  subtitle: "A cidade sob o silêncio",
+  ebookPrice: "R$ 9,60",
+  printedPrice: "R$ 34,90",
+  image: "/capas/karnak-12.png",
+  amazon:
+    "https://www.amazon.com.br/KARNAK-12-SIL%C3%8ANCIO-hist%C3%B3ria-Arrependimento-Reden%C3%A7%C3%A3o-ebook/dp/B0GXLBDPJP",
+  printed: "#"
+},
+
+{
+  title: "O Guardião das Estrelas I",
+  subtitle: "Cidade Flutuante: Horizonte Desconhecido",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 36,66",
+  image: "/capas/guardiao-1.png",
+  amazon:
+    "https://www.amazon.com.br/s/ref=nb_sb_noss?tag=kbl-20&url=search-alias%3Ddigital-text&field-keywords=Cidade+Flutuante+Horizonte+Desconhecido+Guardi%C3%A3o%2C+_B0FQ4J5WJW",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133153"
+},
+
+{
+  title: "O Guardião das Estrelas II",
+  subtitle: "A Chama Entre as Sombras",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 37,19",
+  image: "/capas/guardiao-2.png",
+  amazon:
+    "https://www.amazon.com.br/Guardi%C3%A3o-das-Estrelas-Chama-Sombras-ebook/dp/B0FQM1H8L2/",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133164"
+},
+
+{
+  title: "O Guardião das Estrelas III",
+  subtitle: "O Caminho da Libertação",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 34,90",
+  image: "/capas/guardiao-3.png",
+  amazon:
+    "https://www.amazon.com.br/s?k=Guardi%C3%A3o+das+Estrelas+Caminho+Liberta%C3%A7%C3%A3o%2C+_B0FQRKR62Z",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133169"
+},
+
+{
+  title: "O Guardião das Estrelas IV",
+  subtitle: "A Nova Cidade",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 34,55",
+  image: "/capas/guardiao-4.png",
+  amazon:
+    "https://www.amazon.com.br/s?k=Guardi%C3%A3o+das+Estrelas+Nova+Cidade%2C+_B0FR7MJRL6",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133176"
+},
 
 ];
 
