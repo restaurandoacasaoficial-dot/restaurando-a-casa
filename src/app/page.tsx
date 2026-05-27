@@ -81,52 +81,68 @@ const books = [
     image: "/capas/destronando-medo.png",
     amazon: "https://www.amazon.com.br/s?k=DESTRONANDO+MEDO+pavor+confian%C3%A7a+gra%C3%A7a%2C+_B0FNZWZ3M1&i=digital-text&tag=kbl-20&ref=nb_sb_noss",
     printed: "https://loja.uiclap.com/titulo/ua132845"
-  },
-  {
-    title: "KARNAK-12",
-    subtitle: "A cidade sob o silêncio",
-    ebookPrice: "R$ 9,60",
-    printedPrice: "R$ 34,90",
-    image: "/capas/karnak-12.png",
-    amazon: "https://www.amazon.com.br/KARNAK-12-SIL%C3%8ANCIO-hist%C3%B3ria-Arrependimento-Reden%C3%A7%C3%A3o-ebook/dp/B0GXLBDPJP",
-    printed: "#"
-  },
-  {
-    title: "O Guardião das Estrelas I",
-    subtitle: "Cidade Flutuante: Horizonte Desconhecido",
-    ebookPrice: "R$ 9,90",
-    printedPrice: "R$ 36,66",
-    image: "/capas/guardiao-1.png",
-    amazon: "https://www.amazon.com.br/s/ref=nb_sb_noss?tag=kbl-20&url=search-alias%3Ddigital-text&field-keywords=Cidade+Flutuante+Horizonte+Desconhecido+Guardi%C3%A3o%2C+_B0FQ4J5WJW",
-    printed: "https://loja.uiclap.com/titulo/ua133153"
-  },
-  {
-    title: "O Guardião das Estrelas II",
-    subtitle: "A Chama Entre as Sombras",
-    ebookPrice: "R$ 9,90",
-    printedPrice: "R$ 37,19",
-    image: "/capas/guardiao-2.png",
-    amazon: "https://www.amazon.com.br/Guardi%C3%A3o-das-Estrelas-Chama-Sombras-ebook/dp/B0FQM1H8L2/",
-    printed: "https://loja.uiclap.com/titulo/ua133164"
-  },
-  {
-    title: "O Guardião das Estrelas III",
-    subtitle: "O Caminho da Libertação",
-    ebookPrice: "R$ 9,90",
-    printedPrice: "R$ 34,90",
-    image: "/capas/guardiao-3.png",
-    amazon: "https://www.amazon.com.br/s?k=Guardi%C3%A3o+das+Estrelas+Caminho+Liberta%C3%A7%C3%A3o%2C+_B0FQRKR62Z",
-    printed: "https://loja.uiclap.com/titulo/ua133169"
-  },
-  {
-    title: "O Guardião das Estrelas IV",
-    subtitle: "A Nova Cidade",
-    ebookPrice: "R$ 9,90",
-    printedPrice: "R$ 34,55",
-    image: "/capas/guardiao-4.png",
-    amazon: "https://www.amazon.com.br/s?k=Guardi%C3%A3o+das+Estrelas+Nova+Cidade%2C+_B0FR7MJRL6",
-    printed: "https://loja.uiclap.com/titulo/ua133176"
   }
+
+  ,
+  {
+  title: "KARNAK-12",
+  subtitle: "A cidade sob o silêncio",
+  ebookPrice: "R$ 9,60",
+  printedPrice: "R$ 34,90",
+  image: "/capas/karnak-12.png",
+  amazon:
+    "https://www.amazon.com.br/KARNAK-12-SIL%C3%8ANCIO-hist%C3%B3ria-Arrependimento-Reden%C3%A7%C3%A3o-ebook/dp/B0GXLBDPJP",
+  printed: "#"
+},
+
+{
+  title: "O Guardião das Estrelas I",
+  subtitle: "Cidade Flutuante: Horizonte Desconhecido",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 36,66",
+  image: "/capas/guardiao-1.png",
+  amazon:
+    "https://www.amazon.com.br/s/ref=nb_sb_noss?tag=kbl-20&url=search-alias%3Ddigital-text&field-keywords=Cidade+Flutuante+Horizonte+Desconhecido+Guardi%C3%A3o%2C+_B0FQ4J5WJW",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133153"
+},
+
+{
+  title: "O Guardião das Estrelas II",
+  subtitle: "A Chama Entre as Sombras",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 37,19",
+  image: "/capas/guardiao-2.png",
+  amazon:
+    "https://www.amazon.com.br/Guardi%C3%A3o-das-Estrelas-Chama-Sombras-ebook/dp/B0FQM1H8L2/",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133164"
+},
+
+{
+  title: "O Guardião das Estrelas III",
+  subtitle: "O Caminho da Libertação",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 34,90",
+  image: "/capas/guardiao-3.png",
+  amazon:
+    "https://www.amazon.com.br/s?k=Guardi%C3%A3o+das+Estrelas+Caminho+Liberta%C3%A7%C3%A3o%2C+_B0FQRKR62Z",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133169"
+},
+
+{
+  title: "O Guardião das Estrelas IV",
+  subtitle: "A Nova Cidade",
+  ebookPrice: "R$ 9,90",
+  printedPrice: "R$ 34,55",
+  image: "/capas/guardiao-4.png",
+  amazon:
+    "https://www.amazon.com.br/s?k=Guardi%C3%A3o+das+Estrelas+Nova+Cidade%2C+_B0FR7MJRL6",
+  printed:
+    "https://loja.uiclap.com/titulo/ua133176"
+},
+
 ];
 
 // =====================================================
@@ -213,15 +229,18 @@ const books = [
 
 export default function RestaurandoCasaPremium() {
   return (
-    <main className="bg-[#f6f1e8] text-slate-900 overflow-hidden">
+    <main className="bg-gradient-to-b from-[#f8f4ec] via-[#f6f1e8] to-[#efe6d6] text-slate-900 overflow-hidden">
+      <div className="fixed top-0 left-0 w-72 h-72 bg-amber-200/30 blur-3xl rounded-full pointer-events-none"></div>
+      <div className="fixed bottom-0 right-0 w-72 h-72 bg-indigo-300/20 blur-3xl rounded-full pointer-events-none"></div>
+
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#312e81] text-white">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#312e81] text-white">
         <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <div className="inline-flex items-center px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8">
-              <span className="text-sm uppercase tracking-[0.2em] text-amber-200">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-14 md:py-20 grid lg:grid-cols-[1fr_0.95fr] gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col items-center">
+            <div className="inline-flex items-center justify-center mx-auto px-5 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8 text-center">
+              <span className="text-sm uppercase tracking-[0.2em] text-amber-200 text-center">
                 Livros cristãos • Fé • Cura • Esperança
               </span>
             </div>
@@ -229,18 +248,18 @@ export default function RestaurandoCasaPremium() {
             <img
               src="/logo/logo.png"
               alt="Restaurando a Casa"
-              className="w-52 mb-10"
+              className="w-40 md:w-52 mb-8 md:mb-10 mx-auto"
             />
 
-            <h1 className="text-5xl lg:text-7xl font-black leading-[1.05] mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight mb-6 text-center">
               Restaurando a <span className="text-amber-300">Casa</span>
             </h1>
 
-            <p className="text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-2xl mb-10">
+            <p className="text-lg sm:text-xl lg:text-2xl text-slate-200 leading-relaxed max-w-2xl mb-10 text-center">
               Seja bem-vindo ao lugar onde restauramos juntos o equilíbrio e a harmonia na nossa casa mais preciosa: nós mesmos.
             </p>
 
-            <div className="flex flex-wrap gap-5">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <a
                 href="#catalogo"
                 className="bg-amber-400 hover:bg-amber-300 text-slate-900 font-black px-8 py-5 rounded-2xl transition-all shadow-2xl"
@@ -257,30 +276,32 @@ export default function RestaurandoCasaPremium() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 gap-5 max-w-[520px] mx-auto items-stretch">
             {books.slice(0,4).map((book) => (
-              <div
+              <a
                 key={book.title}
-                className="bg-white/10 border border-white/10 backdrop-blur-xl rounded-[28px] p-4 shadow-2xl hover:-translate-y-2 transition-all duration-500"
+                href={book.amazon}
+                target="_blank"
+                className="bg-white/10 border border-white/10 backdrop-blur-xl rounded-[32px] p-4 shadow-2xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 block group overflow-hidden h-full flex flex-col min-h-[420px]"
               >
                 <img
                   src={book.image}
                   alt={book.title}
-                  className="w-full h-[320px] object-cover rounded-2xl mb-4"
+                  className="w-full h-[220px] sm:h-[260px] lg:h-[240px] object-contain bg-gradient-to-b from-white to-slate-100 rounded-2xl mb-4 p-3 group-hover:scale-105 transition-all duration-700"
                 />
 
                 <h3 className="font-black text-xl leading-tight mb-2">
                   {book.title}
                 </h3>
 
-                <p className="text-slate-300 text-sm mb-3">
+                <p className="text-slate-300 text-sm mb-3 flex-1">
                   {book.subtitle}
                 </p>
 
                 <div className="text-amber-300 font-bold text-lg">
                   {book.ebookPrice}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -358,22 +379,22 @@ export default function RestaurandoCasaPremium() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {books.map((book) => (
               <div
                 key={book.title}
-                className="group bg-white rounded-[34px] overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
+                className="group bg-white/80 backdrop-blur-xl rounded-[36px] overflow-hidden shadow-xl hover:shadow-[0_25px_80px_rgba(0,0,0,0.18)] hover:-translate-y-3 transition-all duration-500 border border-white/60"
               >
                 <div className="overflow-hidden">
                   <img
                     src={book.image}
                     alt={book.title}
-                    className="w-full h-[460px] object-cover group-hover:scale-105 transition-all duration-700"
+                    className="w-full h-[320px] sm:h-[420px] object-contain bg-gradient-to-b from-[#faf7f2] to-[#f3eadf] group-hover:scale-110 transition-all duration-700 p-5"
                   />
                 </div>
 
                 <div className="p-8">
-                  <h3 className="text-3xl font-black leading-tight mb-4">
+                  <h3 className="text-2xl sm:text-3xl font-black leading-tight mb-4">
                     {book.title}
                   </h3>
 
@@ -385,7 +406,7 @@ export default function RestaurandoCasaPremium() {
                     <a
                       href={book.amazon}
                       target="_blank"
-                      className="flex items-center justify-between bg-slate-900 hover:bg-slate-800 text-white px-6 py-5 rounded-2xl transition-all"
+                      className="flex items-center justify-between bg-gradient-to-r from-slate-900 to-slate-700 hover:scale-[1.02] text-white px-6 py-5 rounded-2xl transition-all shadow-xl"
                     >
                       <div>
                         <div className="font-black text-lg">
@@ -403,7 +424,7 @@ export default function RestaurandoCasaPremium() {
                     <a
                       href={book.printed}
                       target="_blank"
-                      className="flex items-center justify-between bg-[#f6f1e8] hover:bg-[#efe7d8] border border-[#e7dcc8] px-6 py-5 rounded-2xl transition-all"
+                      className="flex items-center justify-between bg-[#f6f1e8] hover:bg-[#efe7d8] border border-[#e7dcc8] px-6 py-5 rounded-2xl transition-all hover:scale-[1.02]"
                     >
                       <div>
                         <div className="font-black text-lg">
@@ -456,17 +477,115 @@ export default function RestaurandoCasaPremium() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
-            <img src="/capas/destronando-ansiedade.png" className="rounded-3xl shadow-2xl" />
-            <img src="/capas/destronando-inseguranca.png" className="rounded-3xl shadow-2xl mt-10" />
-            <img src="/capas/destronando-deserto.png" className="rounded-3xl shadow-2xl -mt-10" />
-            <img src="/capas/destronando-medo.png" className="rounded-3xl shadow-2xl" />
+          <div className="grid grid-cols-2 gap-6 items-start max-w-[520px] mx-auto">
+            <img src="/capas/destronando-ansiedade.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3" />
+            <img src="/capas/destronando-inseguranca.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3 translate-y-8" />
+            <img src="/capas/destronando-deserto.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3 -translate-y-8" />
+            <img src="/capas/destronando-medo.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3" />
           </div>
         </div>
       </section>
 
+
+      {/* FICÇÃO */}
+      <section className="py-28 bg-[#0f172a] text-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-4xl mx-auto mb-20">
+            <span className="uppercase tracking-[0.2em] text-amber-300 font-bold text-sm">
+              Ficção & Jornada
+            </span>
+
+            <h2 className="text-5xl font-black mt-5 mb-8">
+              Universos, mistérios e jornadas épicas
+            </h2>
+
+            <p className="text-xl text-slate-300 leading-relaxed">
+              Conheça coleções inspiradoras que unem imaginação, propósito e reflexão.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-6">
+            {books.slice(6).map((book) => (
+              <div
+                key={book.title}
+                className="bg-white/10 backdrop-blur-xl rounded-[28px] overflow-hidden border border-white/10 hover:-translate-y-3 transition-all duration-500"
+              >
+                <img
+                  src={book.image}
+                  alt={book.title}
+                  className="w-full h-[320px] object-contain bg-gradient-to-b from-slate-100 to-slate-300 p-4"
+                />
+
+                <div className="p-5">
+                  <h3 className="font-black text-lg mb-2">
+                    {book.title}
+                  </h3>
+
+                  <p className="text-slate-300 text-sm">
+                    {book.subtitle}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* TESTEMUNHOS */}
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="uppercase tracking-[0.2em] text-amber-700 font-bold text-sm">
+              Testemunhos
+            </span>
+
+            <h2 className="text-5xl font-black mt-5 mb-8">
+              Histórias de restauração
+            </h2>
+
+            <p className="text-xl text-slate-600 leading-relaxed">
+              Pessoas impactadas através da Palavra, da fé e da esperança.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+              <p className="text-slate-700 leading-relaxed mb-6">
+                “Esses livros me ajudaram a vencer a ansiedade e voltar a confiar em Deus.”
+              </p>
+              <div className="font-black text-slate-900">— Leitora Amazon</div>
+            </div>
+
+            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+              <p className="text-slate-700 leading-relaxed mb-6">
+                “Uma leitura acolhedora, profunda e extremamente necessária.”
+              </p>
+              <div className="font-black text-slate-900">— Comunidade Restaurando a Casa</div>
+            </div>
+
+            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+              <p className="text-slate-700 leading-relaxed mb-6">
+                “Encontrei esperança novamente através dessas mensagens.”
+              </p>
+              <div className="font-black text-slate-900">— Leitor Kindle</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a
+        href="https://wa.me/"
+        target="_blank"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-3xl transition-all hover:scale-110"
+      >
+        💬
+      </a>
+
+
       {/* CTA */}
-      <section className="py-32 bg-[#0f172a] text-white text-center relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-br from-[#020617] via-[#0f172a] to-[#1e293b] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1519834785169-98be25ec3f84?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6">
@@ -492,16 +611,16 @@ export default function RestaurandoCasaPremium() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#020617] text-slate-400 py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-8">
-          <div>
+      <footer className="bg-black text-slate-400 py-14 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-8 text-center">
+          <div className="flex flex-col items-center lg:items-center">
             <img
               src="/logo/logo.png"
               alt="Restaurando a Casa"
               className="w-40 mb-4"
             />
 
-            <p className="max-w-md leading-relaxed">
+            <p className="max-w-md leading-relaxed text-center">
               Livros cristãos para restaurar vidas através da Palavra de Deus.
             </p>
           </div>
