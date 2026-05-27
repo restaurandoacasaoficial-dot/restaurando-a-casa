@@ -477,7 +477,7 @@ export default function RestaurandoCasaPremium() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 items-start max-w-[520px] mx-auto">
+          <div className="grid grid-cols-2 gap-6 items-start" max-w-[520px] mx-auto">
             <img src="/capas/destronando-ansiedade.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3" />
             <img src="/capas/destronando-inseguranca.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3 translate-y-8" />
             <img src="/capas/destronando-deserto.png" className="rounded-3xl shadow-2xl w-full object-contain bg-white p-3 -translate-y-8" />
@@ -533,50 +533,77 @@ export default function RestaurandoCasaPremium() {
 
 
 
-      {/* TESTEMUNHOS */}
-      <section className="py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="uppercase tracking-[0.2em] text-amber-700 font-bold text-sm">
-              Testemunhos
-            </span>
+     {/* TESTEMUNHOS */}
+<section className="py-28 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center max-w-3xl mx-auto mb-20">
+      <span className="uppercase tracking-[0.2em] text-amber-700 font-bold text-sm">
+        Avaliações Reais
+      </span>
 
-            <h2 className="text-5xl font-black mt-5 mb-8">
-              Histórias de restauração
-            </h2>
+      <h2 className="text-5xl font-black mt-5 mb-8">
+        O que os leitores estão dizendo
+      </h2>
 
-            <p className="text-xl text-slate-600 leading-relaxed">
-              Pessoas impactadas através da Palavra, da fé e da esperança.
-            </p>
-          </div>
+      <p className="text-xl text-slate-600 leading-relaxed">
+        Comentários reais de leitores na Amazon.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
-              <p className="text-slate-700 leading-relaxed mb-6">
-                “Esses livros me ajudaram a vencer a ansiedade e voltar a confiar em Deus.”
-              </p>
-              <div className="font-black text-slate-900">— Leitora Amazon</div>
-            </div>
+    <div className="grid md:grid-cols-3 gap-8">
+      <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+        <div className="text-yellow-500 text-2xl mb-4">★★★★★</div>
 
-            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
-              <p className="text-slate-700 leading-relaxed mb-6">
-                “Uma leitura acolhedora, profunda e extremamente necessária.”
-              </p>
-              <div className="font-black text-slate-900">— Comunidade Restaurando a Casa</div>
-            </div>
+        <h3 className="font-black text-xl mb-3">
+          Muito bom
+        </h3>
 
-            <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
-              <p className="text-slate-700 leading-relaxed mb-6">
-                “Encontrei esperança novamente através dessas mensagens.”
-              </p>
-              <div className="font-black text-slate-900">— Leitor Kindle</div>
-            </div>
-          </div>
+        <p className="text-slate-700 leading-relaxed mb-6">
+          “Livro espetacular.”
+        </p>
+
+        <div className="font-black text-slate-900">
+          — Paulo R Palhano
         </div>
-      </section>
+      </div>
+
+      <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+        <div className="text-yellow-500 text-2xl mb-4">★★★★★</div>
+
+        <h3 className="font-black text-xl mb-3">
+          Recomendo
+        </h3>
+
+        <p className="text-slate-700 leading-relaxed mb-6">
+          “Muito bom.”
+        </p>
+
+        <div className="font-black text-slate-900">
+          — Eni Rohde
+        </div>
+      </div>
+
+      <div className="bg-[#f8f5ef] rounded-[32px] p-8 shadow-xl">
+        <div className="text-yellow-500 text-2xl mb-4">★★★★★</div>
+
+        <h3 className="font-black text-xl mb-3">
+          Muito bom
+        </h3>
+
+        <p className="text-slate-700 leading-relaxed mb-6">
+          “Ótimo, quem olha a capa não imagina a intensidade do conteúdo.”
+        </p>
+
+        <div className="font-black text-slate-900">
+          — mariane
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <a
-        href="https://wa.me/"
+        href="https://wa.me/5547997075935"
         target="_blank"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-3xl transition-all hover:scale-110"
       >
